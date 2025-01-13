@@ -1,0 +1,10 @@
+{
+    "nome": "Candidato 1",
+    "età": 30,
+    "esperienza": "5 anni",
+    "competenze": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ]
+}
