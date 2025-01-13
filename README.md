@@ -11,7 +11,7 @@ Questa è una semplice web app progettata per mostrare i dati di un candidato. L
 
 ## Come Usare
 
-1. Apri `index.html` in un browser per visualizzare la pagina.
+1. Visita il sito web al seguente URL: [https://valerialevantesi.github.io/datapoints-render/](https://valerialevantesi.github.io/datapoints-render/)
 2. I dati del candidato vengono caricati da `candidato.json` e possono essere visualizzati nella console del browser.
 
 ## Tipi di Datapoint nel JSON
