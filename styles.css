@@ -4,6 +4,7 @@ body {
     font-family: 'Work Sans', sans-serif;
     padding-top: 64px;
     /* Add padding to account for the fixed top-bar */
+    color: #374957;
 }
 
 .top-bar {
@@ -43,7 +44,7 @@ body {
     margin: 0;
     font-weight: bold;
     color: #374957;
-    font-size: 1.5em;
+    font-size: 1em;
     /* H4 size */
 }
 
