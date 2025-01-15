@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ]
             }
         ]
-    }
+    };
 
 
     function renderPitchDeckDetails() {
@@ -382,9 +382,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const pitchDeckData = mockData.flat_datapoints.find(dp => dp.datapoint_id === 'pitch_deck');
         if (pitchDeckData) {
             pitchDeckData.fields.forEach(field => {
-                const li = document.createElement('li');
-                li.textContent = `${field.id.replace('content-', '').replace('_', ' ')}: ${field.value}`;
-                ul.appendChild(li);
+                const listItem = document.createElement('li');
+                listItem.className = 'list-item';
+
+                const primaryText = document.createElement('div');
+                primaryText.className = 'primary-text';
+                primaryText.textContent = field.id.replace('content-', '').replace('_', ' ');
+
+                const secondaryText = document.createElement('div');
+                secondaryText.className = 'secondary-text';
+                secondaryText.textContent = field.value;
+
+                listItem.appendChild(primaryText);
+                listItem.appendChild(secondaryText);
+                ul.appendChild(listItem);
             });
         }
     }

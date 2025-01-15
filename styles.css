@@ -3,7 +3,73 @@
 body {
     font-family: 'Work Sans', sans-serif;
     padding-top: 64px;
-    /* Add padding to account for the fixed top-bar */
+    color: #374957;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    padding: 16px;
+    justify-items: center;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.details ul li {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #000;
+}
+
+.decorative-icon,
+.action-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+
+.decorative-icon {
+    top: 10px;
+    left: 10px;
+}
+
+.action-icon {
+    top: 10px;
+    right: 10px;
+}
+
+.details ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 1360px;
+}
+
+.details li {
+    flex: 1 1 calc(50% - 32px);
+    max-width: 680px;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#pitch_deck,
+#pitch_deck * {
+    color: #37BEE6;
+}
+
+#pitch_deck .secondary-text {
     color: #374957;
 }
 
@@ -45,12 +111,41 @@ body {
     font-weight: bold;
     color: #374957;
     font-size: 1em;
-    /* H4 size */
 }
 
-.datapoint-list {
-    max-width: 600px;
-    margin: 0 auto;
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.list-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(50% - 16px);
+    box-sizing: border-box;
+    min-height: 64px;
+}
+
+.primary-text {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.secondary-text {
+    margin-top: 8px;
+    color: #6c757d;
+}
+
+.secondary-text ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.secondary-text li {
+    list-style-type: disc;
 }
 
 .datapoint-item {
