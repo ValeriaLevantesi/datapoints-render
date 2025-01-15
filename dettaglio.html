@@ -12,9 +12,16 @@
     <div class="top-bar">
         <h1>Dettaglio Candidato</h1>
     </div>
-    <div class="details">
-        <p>Qui verranno mostrati i dettagli del candidato.</p>
+    <div class="details" id="pitch_deck">
+        <h2>pitch_deck</h2>
+        <ul>
+            <!-- Pitch deck details will be dynamically loaded here -->
+        </ul>
     </div>
+    <script src="script.js"></script>
+    <script>
+        window.onload = function () {
+            renderPitchDeckDetails();
+        }
+    </script>
 </body>
-
-</html>

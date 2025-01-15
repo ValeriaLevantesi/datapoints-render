@@ -1,10 +1,11 @@
 # Web App Candidato
 
-Questa è una semplice web app progettata per mostrare i dati di un candidato. L'app utilizza HTML, CSS e JavaScript per visualizzare le informazioni estratte da un file JSON.
+Questa è una semplice web app progettata per mostrare i dati di un candidato. L'app utilizza HTML, CSS e JavaScript per visualizzare le informazioni estratte da un file JSON e renderle più human readable.
 
 ## Struttura del Progetto
 
-- **index.html**: La pagina principale che include una barra superiore con il nome del candidato.
+- **index.html**: La pagina principale che include una barra superiore con il nome del candidato e la lista di datapoints.
+- **dettagli.html**: La pagina con i datafields di un datapoint.
 - **styles.css**: Contiene gli stili per la pagina web.
 - **script.js**: Uno script JavaScript che carica i dati del candidato da un file JSON e li visualizza nella console.
 - **candidato.json**: Un file JSON di esempio contenente i dati del candidato.
@@ -23,10 +24,9 @@ Nel file JSON ci sono due tipi di datapoint:
 I campi dati possono essere di diversi tipi:
 - Booleani
 - Stringa
-- Array di stringhe
 - Numero
+- Array di stringhe
+- Array di numeri
 - Mappa
 
-## Note
 
-Questa app è un esempio di base e può essere estesa per includere ulteriori funzionalità e stili.
