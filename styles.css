@@ -22,11 +22,30 @@ body {
 
 .details ul li {
     position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
-    border: 1px solid #000;
+    padding: 16px;
+    text-align: left;
+}
+
+.name-container {
+    background-color: #e0f7fa;
+    border: 1px solid #37BEE6;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.name {
     color: #37BEE6;
-    /* Apply blue color to index key */
+    font-weight: bold;
+}
+
+.role {
+    color: #374957;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .decorative-icon,

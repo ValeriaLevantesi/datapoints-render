@@ -995,8 +995,21 @@ document.addEventListener('DOMContentLoaded', () => {
             teamData.elements.forEach(member => {
                 const li = document.createElement('li');
                 const roleField = member.fields.find(field => field.id === 'role');
-                li.textContent = `${member.index_key.replace('_', ' ')} - ${roleField.value}`;
+                const nameDiv = document.createElement('div');
+                nameDiv.className = 'name';
+                nameDiv.textContent = member.index_key.replace('_', ' ');
+
+                const roleDiv = document.createElement('div');
+                roleDiv.className = 'role';
+                roleDiv.textContent = roleField.value;
+
+                const nameContainer = document.createElement('div');
+                nameContainer.className = 'name-container';
+                nameContainer.appendChild(nameDiv);
+
+                ul.appendChild(nameContainer);
                 ul.appendChild(li);
+                li.appendChild(roleDiv);
             });
         }
     }
