@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mockData = {
-        "id": "worky",
-        "reference_label": "Worky",
+        "id": "brum-batch-3-2",
+        "reference_label": "BRUM Batch 3.2",
         "flat_datapoints": [
             {
                 "datapoint_id": "pitch_deck",
@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         "id": "content-financial_projections",
                         "extracted_successfully": true,
-                        "value": false,
-                        "reasoning": "The pitch does not provide any explicit long-term financial projections or forecasts of the company's financial performance over a period of more than 2 years.",
+                        "value": true,
+                        "reasoning": "The pitch includes a financial table projecting metrics such as the number of students, revenue, and other financial indicators from 2024 to 2028, which is a period of more than 2 years.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
                         "pc_metrics": {
-                            "awareness": -1,
+                            "awareness": 1,
                             "commitment": 0,
                             "ambition": 0,
                             "execution": 0
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "content-frankenstein_claim",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck contains a statement that can be classified as a 'Frankenstein claim' in the section discussing the bundled HR + Payroll + Benefits product. It mentions that the company aims to monetize 10x more per user by integrating HR and Payroll, which suggests a combination of existing solutions in the market. Additionally, the mention of 'Worky+' as a single integral product with HR and Payroll also indicates a blending of functionalities from different companies.",
+                        "reasoning": "The pitch deck includes a section on page 6 that describes BRUM as a combination of two groups, DVento Group and OneDay Group, highlighting their respective competencies and how they come together to form BRUM. This can be classified as a 'Frankenstein claim' as it defines BRUM by combining elements from existing companies.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "content-mckynsey_claim",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck provides a comprehensive overview of the startup's market, challenges, and solutions, relying on secondary data such as market size, employee churn statistics, and industry trends, without presenting primary data from interviews or surveys.",
+                        "reasoning": "The pitch deck provides a comprehensive overview of the driving license market in Italy, including statistics and insights about traditional driving schools and the proposed digital solution by BRUM. However, it primarily relies on secondary data sources such as government statistics and market analysis without presenting primary data from interviews or surveys.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "content-onepercent_claim",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck mentions a US$15Bn market size and states that Worky can cater to ~25M Mexicans and 1.3M SMEs, which implies a potential revenue projection based on a small percentage of the total market.",
+                        "reasoning": "The pitch deck mentions a market size of over 1 billion euros in Italy for the driving license market, which implies that capturing even 1% of this market would represent a significant revenue opportunity. This aligns with the definition of a 'one percent claim' as it projects potential revenue based on a small percentage of a large market.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "content-pre_money_calculation",
                         "extracted_successfully": true,
                         "value": false,
-                        "reasoning": "The pitch does not explicitly mention any pre-money valuation calculations or methodologies such as multiples, discounted cash flow (DCF), or competitor benchmarking.",
+                        "reasoning": "The pitch does not explicitly address pre-money valuation calculations or methodologies such as multiples, discounted cash flow (DCF), or competitor benchmarking.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -99,8 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         "id": "content-required_funds",
                         "extracted_successfully": true,
-                        "value": false,
-                        "reasoning": "The pitch does not mention any specific amount of money that the company wants to raise.",
+                        "value": true,
+                        "reasoning": "The pitch mentions a financing round for Seed, stating that the company needs an additional €2M to become profitable by December 2027 and to finance the opening of 4 cities and scaling up the product, team, and marketing.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -108,14 +108,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             "awareness": 0,
                             "commitment": 0,
                             "ambition": 0,
-                            "execution": -1
+                            "execution": 1
                         }
                     },
                     {
                         "id": "content-trump_claim",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck contains several statements that declare the company's offerings as the best or greatest without providing supporting evidence or metrics. For example, phrases like 'We are building the blocks to become the employee go-to platform for benefit management' and 'Our monthly net value retention rate is +100%' are assertions that lack substantiation in the context provided.",
+                        "reasoning": "The pitch deck contains several statements that can be classified as Frankenstein claims, such as the assertion that BRUM aims to become the market leader by 2028 without providing specific metrics or evidence to support this claim.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "content-vanity_claim",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck contains a competitive analysis table on page 7 that highlights Worky's strengths in various dimensions compared to competitors. It claims to have a fast onboarding speed, good employee experience, and specialized focus in Mexico, which may suggest a selective comparison that portrays Worky as superior across all measured dimensions without acknowledging the strengths of competitors.",
+                        "reasoning": "The pitch deck presents a comparison table on page 11 that highlights BRUM's offerings as being superior to traditional driving schools across multiple dimensions, such as price, flexibility, and service quality. This could be seen as a 'Vanity Metric claim' as it portrays BRUM as better in every aspect compared to competitors without acknowledging any potential weaknesses or areas where traditional schools might excel.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "content-wrong_use_of_funds",
                         "extracted_successfully": true,
                         "value": false,
-                        "reasoning": "The pitch does not explicitly mention any allocation of funds towards marketing or sales activities or hiring. It focuses on product development, market needs, and customer engagement without detailing a plan that includes 'wrong use of funds' as defined.",
+                        "reasoning": "The pitch does not explicitly mention any allocation of funds to marketing or sales activities or hiring. It focuses on the business model, growth metrics, and financial projections without detailing specific uses of raised capital.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -159,8 +159,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         "id": "meta-n_slides",
                         "extracted_successfully": true,
-                        "value": 19,
-                        "reasoning": "The pitch deck document contains 19 pages as indicated by the number of distinct page references in the markdown content.",
+                        "value": 17,
+                        "reasoning": "The pitch deck document contains 17 pages as indicated by the number of distinct blocks present in the provided markdown content.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "slide-competition",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck includes a table on page 7 that compares Worky with its competitors in terms of various metrics such as customer headcount, onboarding speed, employee experience, and pricing. This indicates a focus on market competition.",
+                        "reasoning": "The pitch deck includes a slide on digital players in Europe, highlighting their revenues and business models, which indicates a focus on market competition.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "slide-problem_opportunity",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck includes multiple slides that highlight the problems associated with manual HR and payroll management in Mexican SMEs, detailing inefficiencies and the financial impact of these issues. Specifically, slides 2 and 3 address the problems directly, making it clear that there is a significant opportunity for improvement in this market.",
+                        "reasoning": "The pitch deck includes multiple slides that highlight the inefficiencies and unmet needs in the traditional driving school market in Italy, such as the long process, high failure rates, lack of transparency, and high costs. These points clearly outline the problem/opportunity that the startup aims to address.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "slide-team",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck includes a slide dedicated to the founding team members, detailing their backgrounds, prior experiences, and education.",
+                        "reasoning": "The pitch deck includes a slide dedicated to the founding team, detailing the roles and backgrounds of the co-founders and certified instructors.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "slide-traction",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck includes multiple slides that discuss the company's traction, including metrics such as managing 20,000 employees, a monthly net value retention rate of +100%, and a 30% employee rotation reduction within the first 3 months of use. Additionally, it highlights strong customer engagement and retention metrics.",
+                        "reasoning": "The pitch deck includes a slide (page 12) that presents a bar chart showing the growth of 'Allievi BRUM YTD' (BRUM Students YTD) from February to September, along with key metrics such as website sessions, followers, leads, and student satisfaction. This indicates a clear focus on the traction of the company's solution.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         "id": "slide-why_now",
                         "extracted_successfully": true,
                         "value": true,
-                        "reasoning": "The pitch deck includes a slide on the HR Tech industry receiving strong tailwinds due to HR glorification and payroll regulation changes, indicating timely market trends that make the startup's solution relevant.",
+                        "reasoning": "The pitch deck discusses the inefficiencies of traditional driving schools, the growing demand for driving licenses, and the emergence of a digital solution tailored for new generations, indicating a timely market opportunity.",
                         "source_id": "pitch_deck",
                         "grounding_index": null,
                         "grounding_chunk": null,
@@ -269,173 +269,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 "datapoint_id": "team",
                 "elements": [
                     {
-                        "index_key": "ceo",
-                        "fields": [
-                            {
-                                "id": "developer",
-                                "extracted_successfully": true,
-                                "value": false,
-                                "reasoning": "The individual is a Co-Founder and CEO of an HR software company, which indicates a leadership role rather than a software development role. There is no specific mention of software development skills or experience in the profile.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": -1,
-                                    "commitment": 0,
-                                    "ambition": -1,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "full_time",
-                                "extracted_successfully": true,
-                                "value": false,
-                                "reasoning": "The experience section contains only one active role, which is 'Co-Founder and CEO' at Worky.mx, starting from June 2017. The other roles listed have end dates, indicating they are not active.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 0,
-                                    "commitment": -1,
-                                    "ambition": 0,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "linkedin_ex_claim",
-                                "extracted_successfully": true,
-                                "value": false,
-                                "reasoning": "The summary field does not contain any expression like 'ex-something'.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 0,
-                                    "commitment": -1,
-                                    "ambition": -1,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "role",
-                                "extracted_successfully": true,
-                                "value": "CEO",
-                                "reasoning": null,
-                                "source_id": "pitch_deck",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 0,
-                                    "commitment": 0,
-                                    "ambition": 0,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "sales_guy",
-                                "extracted_successfully": true,
-                                "value": true,
-                                "reasoning": "The individual has held roles that involve business development and leadership in a company focused on HR and payroll solutions, which often includes sales responsibilities. Their experience as Head of C2C Core at eBay Classifieds and as LatAm Business Development Lead suggests a strong background in sales and customer engagement.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 1,
-                                    "commitment": 0,
-                                    "ambition": 0,
-                                    "execution": 1
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "index_key": "coo",
-                        "fields": [
-                            {
-                                "id": "developer",
-                                "extracted_successfully": true,
-                                "value": false,
-                                "reasoning": "The individual is a Co-Founder and CEO of an HR software company, which indicates a leadership role rather than a software development role. There is no specific mention of software development skills or experience in the provided profile.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": -1,
-                                    "commitment": 0,
-                                    "ambition": -1,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "full_time",
-                                "extracted_successfully": true,
-                                "value": false,
-                                "reasoning": "The experience section contains only one active role, which is 'Co-Founder and CEO' at Worky.mx, starting from June 2017. The other roles listed have end dates, indicating they are not active.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 0,
-                                    "commitment": -1,
-                                    "ambition": 0,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "linkedin_ex_claim",
-                                "extracted_successfully": true,
-                                "value": false,
-                                "reasoning": "The summary field does not contain any expression like 'ex-something'.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 0,
-                                    "commitment": -1,
-                                    "ambition": -1,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "role",
-                                "extracted_successfully": true,
-                                "value": "COO",
-                                "reasoning": null,
-                                "source_id": "pitch_deck",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 0,
-                                    "commitment": 0,
-                                    "ambition": 0,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "sales_guy",
-                                "extracted_successfully": true,
-                                "value": true,
-                                "reasoning": "The individual has held roles that involve business development and leadership in a company focused on HR and Payroll solutions, which often includes sales responsibilities. Their experience as Head of C2C Core at eBay Classifieds and as LatAm Business Development Lead suggests a strong background in sales and customer engagement.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 1,
-                                    "commitment": 0,
-                                    "ambition": 0,
-                                    "execution": 1
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "index_key": "cto",
+                        "index_key": "lorenzo_lodigiani",
                         "fields": [
                             {
                                 "id": "developer",
                                 "extracted_successfully": true,
                                 "value": true,
-                                "reasoning": "The individual has experience as a Full Stack Developer and has held various technical roles, including Chief Technology Officer and Head of Engineering, which typically require software development skills. Additionally, their education includes software development skills.",
+                                "reasoning": "The individual has experience in technology and operations, particularly in roles that involve tech advising, product management, and the development of educational platforms focused on No Code and Low Code technologies. Their role as Head of Tech & Operations at BRUM involved working with APIs and building internal tools, which aligns with software development skills. Additionally, they have co-founded a No Code and Low Code education platform, indicating a strong foundation in software development concepts.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -450,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 "id": "full_time",
                                 "extracted_successfully": true,
                                 "value": true,
-                                "reasoning": "As of November 2024, the individual holds two active roles: Chief Technology Officer at Stealth Startup (starting July 2024) and Head of Engineering at Naya Homes (which is active until July 2024). Therefore, they are actively involved in two roles.",
+                                "reasoning": "The individual has multiple active roles as of November 2024, including: 1) Lecturer & Mentor at H-FARM (started October 2023), 2) Co-Founder at FounderSwap (started May 2023), 3) Head of Tech & Operations at BRUM (started August 2024), 4) Tech & Ops Consultant at Ciao Elsa (started May 2024), and 5) Entrepreneur in Residence at Boolean (started February 2024). Therefore, there are more than one active roles.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -479,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             {
                                 "id": "role",
                                 "extracted_successfully": true,
-                                "value": "CTO",
+                                "value": "Tech & Operations",
                                 "reasoning": null,
                                 "source_id": "pitch_deck",
                                 "grounding_index": null,
@@ -495,7 +335,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 "id": "sales_guy",
                                 "extracted_successfully": true,
                                 "value": false,
-                                "reasoning": "The individual holds the position of Chief Technology Officer and has a background primarily in technology and engineering roles. There is no indication of direct sales responsibilities or roles in their experience.",
+                                "reasoning": "The profile primarily focuses on education, mentorship, and technology roles rather than direct sales experience. The individual has held positions such as Lecturer, Entrepreneur in Residence, and Co-Founder, which emphasize teaching, product development, and tech operations rather than sales.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -509,13 +349,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         ]
                     },
                     {
-                        "index_key": "head_of_marketing",
+                        "index_key": "luca_cozzarini",
                         "fields": [
                             {
                                 "id": "developer",
                                 "extracted_successfully": true,
                                 "value": false,
-                                "reasoning": "The individual is a Chief Marketing Officer with extensive experience in marketing and product marketing roles. There is no indication of software development skills or experience in the provided profile.",
+                                "reasoning": "The profile does not indicate any software development experience or skills. The individual is a Co-Founder at a company related to driving licenses and has held finance-related roles, which do not align with software development.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -530,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 "id": "full_time",
                                 "extracted_successfully": true,
                                 "value": true,
-                                "reasoning": "The individual currently holds the role of Chief Marketing Officer at WorkBoard, which started in December 2023. Additionally, they held the position of Vice President & Head of Marketing at WorkBoard Inc. until December 2023, indicating that they had two active roles at the same time.",
+                                "reasoning": "As of November 2024, the individual holds an active role as a Co-Founder at BRUM patenti, which started in January 2024. Additionally, they previously held a role as a Finance Operations Coordinator at WeRoad, which ended in December 2023. Therefore, they have one active role and one recently completed role, indicating more than one role in the experience section.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -559,87 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             {
                                 "id": "role",
                                 "extracted_successfully": true,
-                                "value": "HEAD OF MARKETING",
-                                "reasoning": null,
-                                "source_id": "pitch_deck",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 0,
-                                    "commitment": 0,
-                                    "ambition": 0,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "sales_guy",
-                                "extracted_successfully": true,
-                                "value": true,
-                                "reasoning": "The individual has extensive experience in sales roles, including as a Sales Engineer and Account Manager, where they achieved significant sales targets and provided sales enablement. Additionally, their current role as Chief Marketing Officer involves leading revenue operations, which is closely tied to sales functions.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 1,
-                                    "commitment": 0,
-                                    "ambition": 0,
-                                    "execution": 1
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "index_key": "head_of_product",
-                        "fields": [
-                            {
-                                "id": "developer",
-                                "extracted_successfully": true,
-                                "value": false,
-                                "reasoning": "The individual is primarily focused on product management and has held roles such as Head of Product, VP of Product, and Director of Product. There is no indication of software development experience or skills in the provided profile.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": -1,
-                                    "commitment": 0,
-                                    "ambition": -1,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "full_time",
-                                "extracted_successfully": true,
-                                "value": true,
-                                "reasoning": "As of November 2024, the individual holds the position of 'Head of Product' at MHC, which started on January 1, 2024. Additionally, they were the 'VP of Product' at Ascend until January 31, 2024. Therefore, they are actively holding two roles during this time.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 0,
-                                    "commitment": 1,
-                                    "ambition": 0,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "linkedin_ex_claim",
-                                "extracted_successfully": true,
-                                "value": false,
-                                "reasoning": "The summary field does not contain any expression like 'ex-something'.",
-                                "source_id": "linkedin_profile",
-                                "grounding_index": null,
-                                "grounding_chunk": null,
-                                "pc_metrics": {
-                                    "awareness": 0,
-                                    "commitment": -1,
-                                    "ambition": -1,
-                                    "execution": 0
-                                }
-                            },
-                            {
-                                "id": "role",
-                                "extracted_successfully": true,
-                                "value": "HEAD OF PRODUCT",
+                                "value": "Co-Founder, Finance & Ops in WeRoad",
                                 "reasoning": null,
                                 "source_id": "pitch_deck",
                                 "grounding_index": null,
@@ -655,7 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 "id": "sales_guy",
                                 "extracted_successfully": true,
                                 "value": false,
-                                "reasoning": "The profile primarily focuses on product management roles, including positions such as Head of Product, VP of Product, and Director of Product. While there are mentions of collaborating with marketing and analyzing go-to-market strategies, there is no direct indication of a sales role or responsibilities typically associated with sales positions.",
+                                "reasoning": "The profile does not indicate a clear focus on sales roles. The individual is a Co-Founder at BRUM patenti, which may involve sales responsibilities, but the description does not explicitly mention sales activities. Previous roles are primarily in finance and operations, which are not directly related to sales.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -669,13 +429,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         ]
                     },
                     {
-                        "index_key": "head_of_sales",
+                        "index_key": "nicolò_martino",
                         "fields": [
                             {
                                 "id": "developer",
                                 "extracted_successfully": true,
                                 "value": false,
-                                "reasoning": "The individual holds a position as President - GTM at Wisq and has extensive experience in sales, operations, and management roles, but there is no indication of software development skills or experience in their profile.",
+                                "reasoning": "The profile does not indicate any experience or skills related to software development. The individual's roles are primarily in education and administration within the driving school sector, with no mention of programming or software-related tasks.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -690,7 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 "id": "full_time",
                                 "extracted_successfully": true,
                                 "value": true,
-                                "reasoning": "The individual currently holds the position of 'President - GTM' at Wisq, which started in September 2023. Additionally, they have an active role as 'Investor / Advisor / BOD member' at Various, which has been ongoing since October 2016. Therefore, there are two active roles as of November 2024.",
+                                "reasoning": "The individual has two active roles as of November 2024: 'Head of Autoscuola' at BRUM patenti (starting September 2024) and 'Consulente e Docente corsi Reg. 561/06' at Siak Solution (starting September 2023). Both roles overlap, indicating more than one active position.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -705,7 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 "id": "linkedin_ex_claim",
                                 "extracted_successfully": true,
                                 "value": false,
-                                "reasoning": "The summary field does not contain an expression like 'ex-something'. It states 'GTM executive who loves developing people and teams.' which does not match the specified pattern.",
+                                "reasoning": "The summary field does not contain any expression like 'ex-something'.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -719,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             {
                                 "id": "role",
                                 "extracted_successfully": true,
-                                "value": "HEAD OF SALES",
+                                "value": "Responsabile didattico",
                                 "reasoning": null,
                                 "source_id": "pitch_deck",
                                 "grounding_index": null,
@@ -735,7 +495,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 "id": "sales_guy",
                                 "extracted_successfully": true,
                                 "value": true,
-                                "reasoning": "The individual has extensive experience in sales roles, including positions such as Chief Revenue Officer, EVP Worldwide Sales, and SVP of Worldwide Sales, all of which are directly related to sales management and strategy. Additionally, their current role as President - GTM (Go-To-Market) at Wisq suggests a focus on sales and market strategy.",
+                                "reasoning": "The individual has experience as a 'Consulente di vendita' (Sales Consultant) at Tecnocasa Franchising S.p.A., which directly indicates a sales role. Additionally, their summary mentions starting their career as an 'agente di vendita' (sales agent), further supporting the classification as a sales role.",
                                 "source_id": "linkedin_profile",
                                 "grounding_index": null,
                                 "grounding_chunk": null,
@@ -755,1017 +515,447 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 "operation": "transcribe_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:28:28.972248+00:00",
+                "timestamp": "2025-01-03T10:42:15.654389+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "source_id": "pitch_deck"
                 }
             },
             {
                 "operation": "extract_index",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:28:32.888678+00:00",
+                "timestamp": "2025-01-03T10:42:22.240243+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "index_id": "team_members"
                 }
             },
             {
                 "operation": "transcribe_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:28:37.710464+00:00",
+                "timestamp": "2025-01-03T10:42:27.958390+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "source_id": "linkedin_profile"
                 }
             },
             {
                 "operation": "transcribe_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:28:42.692038+00:00",
+                "timestamp": "2025-01-03T10:42:37.253062+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "source_id": "linkedin_profile"
                 }
             },
             {
                 "operation": "transcribe_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:28:48.030057+00:00",
+                "timestamp": "2025-01-03T10:42:41.566686+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "linkedin_profile"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:28:53.703308+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "linkedin_profile"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:28:59.963846+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "linkedin_profile"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:05.225793+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "source_id": "linkedin_profile"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:09.520243+00:00",
+                "timestamp": "2025-01-03T10:42:43.002323+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-financial_projections"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:15.457362+00:00",
+                "timestamp": "2025-01-03T10:42:44.573745+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-frankenstein_claim"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:16.713980+00:00",
+                "timestamp": "2025-01-03T10:42:46.408598+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-mckynsey_claim"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:17.565541+00:00",
+                "timestamp": "2025-01-03T10:42:48.280921+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-multiple_exit_scenarios"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:19.659200+00:00",
+                "timestamp": "2025-01-03T10:42:50.130829+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-onepercent_claim"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:20.742268+00:00",
+                "timestamp": "2025-01-03T10:42:51.120946+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-pre_money_calculation"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:21.641513+00:00",
+                "timestamp": "2025-01-03T10:42:52.515392+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-required_funds"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:23.093719+00:00",
+                "timestamp": "2025-01-03T10:42:53.861208+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-trump_claim"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:24.571817+00:00",
+                "timestamp": "2025-01-03T10:42:56.597677+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-vanity_claim"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:25.750348+00:00",
+                "timestamp": "2025-01-03T10:42:57.773071+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "content-wrong_use_of_funds"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:28.620677+00:00",
+                "timestamp": "2025-01-03T10:42:59.110248+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "meta-n_slides"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:29.764049+00:00",
+                "timestamp": "2025-01-03T10:43:00.115389+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "slide-awards"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:30.855936+00:00",
+                "timestamp": "2025-01-03T10:43:01.428160+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "slide-competition"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:33.253673+00:00",
+                "timestamp": "2025-01-03T10:43:02.849862+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "slide-problem_opportunity"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:34.533005+00:00",
+                "timestamp": "2025-01-03T10:43:05.799970+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "slide-team"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:36.304978+00:00",
+                "timestamp": "2025-01-03T10:43:07.534727+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "slide-traction"
                 }
             },
             {
                 "operation": "extract_flat",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:38.312800+00:00",
+                "timestamp": "2025-01-03T10:43:09.585589+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "slide-why_now"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:38.964011+00:00",
+                "timestamp": "2025-01-03T10:43:10.365557+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "role"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:39.559811+00:00",
+                "timestamp": "2025-01-03T10:43:10.979784+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "role"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:40.179289+00:00",
+                "timestamp": "2025-01-03T10:43:11.597146+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "role"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:40.752363+00:00",
+                "timestamp": "2025-01-03T10:43:13.026532+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "role"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:41.555263+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "role"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:42.172769+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "role"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:43.408212+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "full_time"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:44.539842+00:00",
+                "timestamp": "2025-01-03T10:43:14.209542+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "full_time"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:46.049964+00:00",
+                "timestamp": "2025-01-03T10:43:15.853052+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "full_time"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:47.748410+00:00",
+                "timestamp": "2025-01-03T10:43:16.999869+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "full_time"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:50.194644+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "full_time"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:51.545261+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "full_time"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:52.762983+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "developer"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:54.000456+00:00",
+                "timestamp": "2025-01-03T10:43:17.937813+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "developer"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:55.294033+00:00",
+                "timestamp": "2025-01-03T10:43:20.914211+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "developer"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:29:56.460771+00:00",
+                "timestamp": "2025-01-03T10:43:22.514704+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "developer"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:57.533326+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "developer"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:58.590901+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "developer"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:29:59.964398+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "sales_guy"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:30:01.455058+00:00",
+                "timestamp": "2025-01-03T10:43:24.003498+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "sales_guy"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:30:02.681650+00:00",
+                "timestamp": "2025-01-03T10:43:25.426199+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "sales_guy"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:30:04.500672+00:00",
+                "timestamp": "2025-01-03T10:43:26.284084+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "sales_guy"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:30:06.060518+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "sales_guy"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:30:07.660220+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "sales_guy"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:30:08.974185+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "linkedin_ex_claim"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:30:09.790094+00:00",
+                "timestamp": "2025-01-03T10:43:27.075628+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "linkedin_ex_claim"
                 }
             },
             {
                 "operation": "extract_iterable",
                 "error_message": null,
-                "timestamp": "2024-12-18T15:30:10.559154+00:00",
+                "timestamp": "2025-01-03T10:43:27.869857+00:00",
                 "params": {
                     "base_path": "./data/InvestorBro",
                     "gate_id": "pc_pre-screening",
                     "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "linkedin_ex_claim"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:30:11.498918+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "linkedin_ex_claim"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:30:12.472465+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "linkedin_ex_claim"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T15:30:13.434120+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "linkedin_ex_claim"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.301343+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "pitch_deck"
-                }
-            },
-            {
-                "operation": "extract_index",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.357549+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "index_id": "team_members"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.433530+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "linkedin_profile"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.460153+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "linkedin_profile"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.490046+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "linkedin_profile"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.515946+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "linkedin_profile"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.540379+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "linkedin_profile"
-                }
-            },
-            {
-                "operation": "transcribe_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.567528+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "source_id": "linkedin_profile"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.647452+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-financial_projections"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.682936+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-frankenstein_claim"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.717108+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-mckynsey_claim"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.750107+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-multiple_exit_scenarios"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.782984+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-onepercent_claim"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.815853+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-pre_money_calculation"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.849446+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-required_funds"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.885933+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-trump_claim"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.919478+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-vanity_claim"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.951458+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "content-wrong_use_of_funds"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:36.982750+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "meta-n_slides"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.016249+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "slide-awards"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.054588+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "slide-competition"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.096058+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "slide-problem_opportunity"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.136096+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "slide-team"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.174308+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "slide-traction"
-                }
-            },
-            {
-                "operation": "extract_flat",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.214451+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "slide-why_now"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.273059+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "role"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.331318+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "full_time"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.370175+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "developer"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.410755+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
-                    "field_id": "sales_guy"
-                }
-            },
-            {
-                "operation": "extract_iterable",
-                "error_message": null,
-                "timestamp": "2024-12-18T20:02:37.452160+00:00",
-                "params": {
-                    "base_path": "./data/InvestorBro",
-                    "gate_id": "pc_pre-screening",
-                    "batch_id": "pc_demo",
-                    "candidate_id": "worky",
+                    "candidate_id": "brum-batch-3-2",
                     "field_id": "linkedin_ex_claim"
                 }
             }
         ]
-
     };
 
 
