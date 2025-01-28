@@ -341,6 +341,102 @@ const candidatesData = {
                 ]
             }
         }
+    },
+    "worky": {
+        id: "worky",
+        reference_label: "Worky",
+        datapoints: {
+            "pitch_deck": {
+                type: "flat",
+                fields: [
+                    {
+                        id: "content-financial_projections",
+                        value: false,
+                        reasoning: "The pitch does not provide any explicit long-term financial projections or forecasts of the company's financial performance over a period of more than 2 years."
+                    },
+                    {
+                        id: "content-frankenstein_claim",
+                        value: true,
+                        reasoning: "The pitch deck contains a statement that can be classified as a 'Frankenstein claim' in the section discussing the bundled HR + Payroll + Benefits product. It mentions that the company aims to monetize 10x more per user by integrating HR and Payroll, which suggests a combination of existing solutions in the market. Additionally, the mention of 'Worky+' as a single integral product with HR and Payroll also indicates a blending of functionalities from different companies."
+                    },
+                    {
+                        id: "content-mckynsey_claim",
+                        value: true,
+                        reasoning: "The pitch deck provides a comprehensive overview of the startup's market, challenges, and solutions, relying on secondary data such as market size, employee churn statistics, and industry trends, without presenting primary data from interviews or surveys."
+                    },
+                    {
+                        id: "content-multiple_exit_scenarios",
+                        value: false,
+                        reasoning: "The pitch does not explicitly mention a multiple outcome scenario, including worst-case, baseline, and best-case projections."
+                    },
+                    {
+                        id: "content-onepercent_claim",
+                        value: true,
+                        reasoning: "The pitch deck mentions a US$15Bn market size and states that Worky can cater to ~25M Mexicans and 1.3M SMEs, which implies a potential revenue projection based on a small percentage of the total market."
+                    },
+                    {
+                        id: "content-pre_money_calculation",
+                        value: false,
+                        reasoning: "The pitch does not explicitly mention any pre-money valuation calculations or methodologies such as multiples, discounted cash flow (DCF), or competitor benchmarking."
+                    },
+                    {
+                        id: "content-required_funds",
+                        value: false,
+                        reasoning: "The pitch does not mention any specific amount of money that the company wants to raise."
+                    },
+                    {
+                        id: "content-trump_claim",
+                        value: true,
+                        reasoning: "The pitch deck contains several statements that declare the company's offerings as the best or greatest without providing supporting evidence or metrics. For example, phrases like 'We are building the blocks to become the employee go-to platform for benefit management' and 'Our monthly net value retention rate is +100%' are assertions that lack substantiation in the context provided."
+                    },
+                    {
+                        id: "content-vanity_claim",
+                        value: true,
+                        reasoning: "The pitch deck contains a competitive analysis table on page 7 that highlights Worky's strengths in various dimensions compared to competitors. It claims to have a fast onboarding speed, good employee experience, and specialized focus in Mexico, which may suggest a selective comparison that portrays Worky as superior across all measured dimensions without acknowledging the strengths of competitors."
+                    },
+                    {
+                        id: "content-wrong_use_of_funds",
+                        value: false,
+                        reasoning: "The pitch does not explicitly mention any allocation of funds towards marketing or sales activities or hiring. It focuses on product development, market needs, and customer engagement without detailing a plan that includes 'wrong use of funds' as defined."
+                    },
+                    {
+                        id: "meta-n_slides",
+                        value: 19,
+                        reasoning: "The pitch deck document contains 19 pages as indicated by the number of distinct page references in the markdown content."
+                    },
+                    {
+                        id: "slide-awards",
+                        value: false,
+                        reasoning: "The pitch deck does not contain any slides that specifically mention awards or competitions won by the company."
+                    },
+                    {
+                        id: "slide-competition",
+                        value: true,
+                        reasoning: "The pitch deck includes a table on page 7 that compares Worky with its competitors in terms of various metrics such as customer headcount, onboarding speed, employee experience, and pricing. This indicates a focus on market competition."
+                    },
+                    {
+                        id: "slide-problem_opportunity",
+                        value: true,
+                        reasoning: "The pitch deck includes multiple slides that highlight the problems associated with manual HR and payroll management in Mexican SMEs, detailing inefficiencies and the financial impact of these issues. Specifically, slides 2 and 3 address the problems directly, making it clear that there is a significant opportunity for improvement in this market."
+                    },
+                    {
+                        id: "slide-team",
+                        value: true,
+                        reasoning: "The pitch deck includes a slide dedicated to the founding team members, detailing their backgrounds, prior experiences, and education."
+                    },
+                    {
+                        id: "slide-traction",
+                        value: true,
+                        reasoning: "The pitch deck includes multiple slides that discuss the company's traction, including metrics such as managing 20,000 employees, a monthly net value retention rate of +100%, and a 30% employee rotation reduction within the first 3 months of use. Additionally, it highlights strong customer engagement and retention metrics."
+                    },
+                    {
+                        id: "slide-why_now",
+                        value: true,
+                        reasoning: "The pitch deck includes a slide on the HR Tech industry receiving strong tailwinds due to HR glorification and payroll regulation changes, indicating timely market trends that make the startup's solution relevant."
+                    }
+                ]
+            }
+        }
     }
 };
 
