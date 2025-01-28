@@ -1,9 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Work Sans', sans-serif;
-    padding-top: 64px;
-    color: #374957;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.candidates-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.candidate-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.candidate-card:hover {
+    transform: translateY(-5px);
+}
+
+.datapoints-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.datapoints-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #f8f8f8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .details {
@@ -201,5 +261,79 @@ body {
 
 .arrow {
     font-size: 24px;
-    color: #7e57c2;
+    color: #666;
+    margin-left: 15px;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px;
+    text-align: center;
+}
+
+.candidate-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin: 10px 0;
+    background: white;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.candidate-item:hover {
+    background-color: #f8f9fa;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.content h3 {
+    margin: 0;
+    color: #333;
+    text-transform: lowercase;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #666;
+    margin-left: 15px;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px;
+    text-align: center;
+}
+
+.top-bar {
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+#top-bar-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
 }

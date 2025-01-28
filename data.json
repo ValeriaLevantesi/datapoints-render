@@ -1,0 +1,24 @@
+{
+    "name": "Brum",
+    "datapoints": {
+        "pitch_deck": {
+            "fields": {
+                "problem": "Lack of transparency in used car market",
+                "solution": "Digital platform for car inspection and sale",
+                "market": "£2B UK used car market",
+                "business_model": "Commission per sale",
+                "competition": "Traditional dealerships, Cazoo, Cinch",
+                "traction": "500 cars sold in 2023"
+            }
+        },
+        "team": {
+            "fields": {
+                "founders": "2 co-founders",
+                "experience": "10+ years in automotive industry",
+                "previous_exits": "1 successful exit",
+                "team_size": "15 employees",
+                "hiring_plans": "Expanding sales team"
+            }
+        }
+    }
+}
