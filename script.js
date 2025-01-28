@@ -435,9 +435,44 @@ const candidatesData = {
                         reasoning: "The pitch deck includes a slide on the HR Tech industry receiving strong tailwinds due to HR glorification and payroll regulation changes, indicating timely market trends that make the startup's solution relevant."
                     }
                 ]
+            },
+            "team": {
+                type: "iterable",
+                elements: [
+                    {
+                        index_key: "ceo",
+                        fields: [
+                            {
+                                id: "role",
+                                value: "CEO",
+                                reasoning: null
+                            }
+                        ]
+                    },
+                    {
+                        index_key: "coo",
+                        fields: [
+                            {
+                                id: "role",
+                                value: "COO",
+                                reasoning: null
+                            }
+                        ]
+                    },
+                    {
+                        index_key: "cto",
+                        fields: [
+                            {
+                                id: "role",
+                                value: "CTO",
+                                reasoning: null
+                            }
+                        ]
+                    }
+                ]
             }
         }
-    }
+    },
 };
 
 // Initialize the application
@@ -469,6 +504,39 @@ function displayCandidatesList() {
         });
 
         candidatesList.appendChild(candidateCard);
+    }
+}
+
+function renderTeamDetails() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const datapointId = urlParams.get('datapoint');
+    console.log('Datapoint ID:', datapointId);
+    const teamList = document.getElementById('team-list');
+    console.log('Team List Element:', teamList);
+
+    if (datapointId && candidatesData[datapointId]) {
+        const teamData = candidatesData[datapointId].datapoints.team.elements;
+        console.log('Team Data:', teamData);
+
+        teamList.innerHTML = ''; // Clear existing content
+
+        teamData.forEach(member => {
+            console.log('Member:', member);
+            const listItem = document.createElement('li');
+            listItem.className = 'team-member';
+
+            const nameDiv = document.createElement('div');
+            nameDiv.className = 'name';
+            nameDiv.textContent = member.index_key.replace('_', ' ');
+
+            const roleDiv = document.createElement('div');
+            roleDiv.className = 'role';
+            roleDiv.textContent = member.fields.find(field => field.id === 'role').value;
+
+            listItem.appendChild(nameDiv);
+            listItem.appendChild(roleDiv);
+            teamList.appendChild(listItem);
+        });
     }
 }
 
