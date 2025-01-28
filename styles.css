@@ -230,18 +230,36 @@ h1 {
 }
 
 .datapoint-item {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
+    background: white;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-    padding: 15px;
-    transition: background-color 0.3s;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 .datapoint-item:hover {
-    background-color: #f0f0f0;
+    transform: translateX(10px);
+}
+
+.type-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.flat .type-badge {
+    background-color: #e0f7fa;
+    color: #006064;
+}
+
+.iterable .type-badge {
+    background-color: #f3e5f5;
+    color: #4a148c;
 }
 
 .icon {
@@ -336,4 +354,66 @@ h1 {
     margin: 0;
     font-size: 24px;
     color: #333;
+}
+
+.datafield-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.field-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.field-value {
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.field-value.positive {
+    color: #2e7d32;
+    background: #e8f5e9;
+}
+
+.field-value.negative {
+    color: #c62828;
+    background: #ffebee;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.member-header {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.member-role {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+.field-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.field-label {
+    color: #666;
 }
