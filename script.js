@@ -197,7 +197,7 @@ const candidatesData = {
 // Initialize the application
 function initApp() {
     const currentPage = window.location.pathname;
-    
+
     if (currentPage.endsWith('index.html') || currentPage === '/') {
         displayCandidatesList();
     }
@@ -206,19 +206,22 @@ function initApp() {
 // Display candidates list on the index page
 function displayCandidatesList() {
     const candidatesList = document.getElementById('candidatesList');
-    
+
     for (const [id, candidate] of Object.entries(candidatesData)) {
         const candidateCard = document.createElement('div');
         candidateCard.className = 'candidate-card';
+
+        // Use the startup name from the reference_label field
+        const startupName = candidate.reference_label;
+
         candidateCard.innerHTML = `
-            <h2>${candidate.name}</h2>
-            <p>${candidate.role}</p>
-        `;
-        
+<h2>${startupName}</h2>
+`;
+
         candidateCard.addEventListener('click', () => {
             window.location.href = `datapoints.html?id=${id}`;
         });
-        
+
         candidatesList.appendChild(candidateCard);
     }
 }
