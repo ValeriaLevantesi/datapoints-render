@@ -1,6 +1,6 @@
 {
-  "name": "Startup Display App",
-  "description": "An application that visualizes candidate data from JSON for improved readability using HTML, CSS, and JavaScript.",
+  "name": "Smart Sales Candidate",
+  "description": "An application that visualizes multiple candidates data from JSON for improved readability using HTML, CSS, and JavaScript.",
   "main_technologies": ["HTML", "CSS", "JavaScript"],
   "rules": [
     {
