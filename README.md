@@ -1,6 +1,7 @@
 # Web App Candidato
 
-Questa è una semplice web app progettata per mostrare i dati di un candidato. L'app utilizza HTML, CSS e JavaScript per visualizzare le informazioni estratte da un file JSON e renderle più human readable.
+Questo è il prototipo di un'app progettata per mostrare diversi candidati(startups) e i loro datapoint.
+L'app utilizza HTML, CSS e JavaScript per visualizzare le informazioni estratte da un file JSON e renderle più human readable.
 
 ## Struttura del Progetto
 
@@ -21,7 +22,7 @@ Nel file JSON ci sono due tipi di datapoint:
 - **Flat**: contiene direttamente il dato/valore.
 - **Iterable**: è un contenitore di una lista di valori dinamici.
 
-I campi dati possono essere di diversi tipi:
+I datafield possono essere di diversi tipi:
 - Booleani
 - Stringa
 - Numero

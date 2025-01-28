@@ -1,0 +1,37 @@
+{
+  "name": "Startup Display App",
+  "description": "An application that visualizes candidate data from JSON for improved readability using HTML, CSS, and JavaScript.",
+  "main_technologies": ["HTML", "CSS", "JavaScript"],
+  "rules": [
+    {
+      "context": "json",
+      "instructions": "Ensure JSON data is parsed correctly and transformed into a more readable format using JavaScript."
+    },
+    {
+      "context": "html",
+      "instructions": "Structure HTML for displaying candidate data points; ensure semantic HTML tags are used."
+    },
+    {
+      "context": "css",
+      "instructions": "Implement responsive design using CSS media queries; use classes to style candidate information."
+    },
+    {
+      "context": "javascript",
+      "instructions": "Use JavaScript to fetch data from the JSON file, manipulate the DOM for displaying data, and add any interactive elements."
+    }
+  ],
+  "optimization": [
+    {
+      "type": "performance",
+      "details": "Minimize DOM manipulations by using document fragments and avoid large reflows/redraws."
+    }
+  ],
+  "best_practices": [
+    {
+      "recommendation": "Use CSS for styling and minimize inline styles in JavaScript."
+    },
+    {
+      "recommendation": "Perform input validation to prevent XSS and ensure that JSON data contains valid entries before parsing."
+    }
+  ]
+}
