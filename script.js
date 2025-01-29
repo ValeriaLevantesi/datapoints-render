@@ -8,6 +8,11 @@ const candidatesData = {
                 type: "flat",
                 fields: [
                     {
+                        id: "meta-n_slides",
+                        value: 17,
+                        reasoning: "The pitch deck contains 17 pages"
+                    },
+                    {
                         id: "content-financial_projections",
                         value: true,
                         reasoning: "The pitch includes a financial table projecting metrics such as the number of students, revenue, and other financial indicators from 2024 to 2028"
@@ -23,19 +28,9 @@ const candidatesData = {
                         reasoning: "The pitch deck provides a comprehensive overview of the driving license market in Italy"
                     },
                     {
-                        id: "content-multiple_exit_scenarios",
-                        value: false,
-                        reasoning: "The pitch does not explicitly mention multiple outcome scenarios"
-                    },
-                    {
                         id: "content-onepercent_claim",
                         value: true,
                         reasoning: "The pitch deck mentions a market size of over 1 billion euros in Italy"
-                    },
-                    {
-                        id: "content-pre_money_calculation",
-                        value: false,
-                        reasoning: "The pitch does not explicitly address pre-money valuation calculations"
                     },
                     {
                         id: "content-required_funds",
@@ -51,21 +46,6 @@ const candidatesData = {
                         id: "content-vanity_claim",
                         value: true,
                         reasoning: "Presents comparison table highlighting BRUM's superiority"
-                    },
-                    {
-                        id: "content-wrong_use_of_funds",
-                        value: false,
-                        reasoning: "Does not explicitly mention allocation of funds"
-                    },
-                    {
-                        id: "meta-n_slides",
-                        value: 17,
-                        reasoning: "The pitch deck contains 17 pages"
-                    },
-                    {
-                        id: "slide-awards",
-                        value: false,
-                        reasoning: "No slides mention awards or competitions"
                     },
                     {
                         id: "slide-competition",
@@ -91,6 +71,26 @@ const candidatesData = {
                         id: "slide-why_now",
                         value: true,
                         reasoning: "Discusses market timing and opportunity"
+                    },
+                    {
+                        id: "content-multiple_exit_scenarios",
+                        value: false,
+                        reasoning: "The pitch does not explicitly mention multiple outcome scenarios"
+                    },
+                    {
+                        id: "content-pre_money_calculation",
+                        value: false,
+                        reasoning: "The pitch does not explicitly address pre-money valuation calculations"
+                    },
+                    {
+                        id: "content-wrong_use_of_funds",
+                        value: false,
+                        reasoning: "Does not explicitly mention allocation of funds"
+                    },
+                    {
+                        id: "slide-awards",
+                        value: false,
+                        reasoning: "No slides mention awards or competitions"
                     }
                 ]
             },
@@ -199,14 +199,14 @@ const candidatesData = {
                 type: "flat",
                 fields: [
                     {
+                        id: "meta-n_slides",
+                        value: 16,
+                        reasoning: "The pitch deck document contains a total of 16 pages as indicated by the page attributes in the markdown content."
+                    },
+                    {
                         id: "content-financial_projections",
                         value: true,
                         reasoning: "The pitch includes a financial projections chart showing the expected EBITDA and revenue (RICAVI) from 2024 to 2027, which covers a period of four years, thus addressing long-term financial projections."
-                    },
-                    {
-                        id: "content-frankenstein_claim",
-                        value: false,
-                        reasoning: "The pitch deck does not contain any claims that define the 7SECONDS APP by combining elements of existing companies in a 'Frankenstein claim' manner. It focuses on its unique value propositions and market positioning without directly comparing itself to other companies."
                     },
                     {
                         id: "content-mckynsey_claim",
@@ -214,19 +214,9 @@ const candidatesData = {
                         reasoning: "The pitch deck provides a comprehensive overview of the startup's value proposition, market validation, traction, and financial projections, which are essential for defining the problem and opportunity. However, it does not mention any primary data collection methods such as interviews or surveys, indicating a reliance on secondary sources."
                     },
                     {
-                        id: "content-multiple_exit_scenarios",
-                        value: false,
-                        reasoning: "The pitch does not explicitly mention a multiple outcome scenario with detailed projections for worst-case, baseline, and best-case outcomes."
-                    },
-                    {
                         id: "content-onepercent_claim",
                         value: true,
                         reasoning: "The pitch deck mentions that the digital marketing industry has a turnover of over $350 billion annually, and it projects a revenue of 50 million euros by 2028 from the Italian market, which is over 9 billion euros in 2024. This implies a potential market share of approximately 0.5% of the total market, fitting the definition of a 'one percent claim.'"
-                    },
-                    {
-                        id: "content-pre_money_calculation",
-                        value: false,
-                        reasoning: "The pitch does not explicitly address pre-money valuation calculations or methods such as multiples, discounted cash flow (DCF), or competitor benchmarking."
                     },
                     {
                         id: "content-required_funds",
@@ -242,21 +232,6 @@ const candidatesData = {
                         id: "content-vanity_claim",
                         value: true,
                         reasoning: "The pitch deck claims that there are no direct competitors for the 7SECONDS APP, stating that while there are similar entities, they do not proceed in the same direction. This suggests a selective comparison that portrays the company as superior by implying a unique position in the market without acknowledging any relevant competition."
-                    },
-                    {
-                        id: "content-wrong_use_of_funds",
-                        value: false,
-                        reasoning: "The pitch does not explicitly mention that the capital raised will be allocated to marketing or sales activities or hiring. Instead, it focuses on implementing new app features and expanding into new markets."
-                    },
-                    {
-                        id: "meta-n_slides",
-                        value: 16,
-                        reasoning: "The pitch deck document contains a total of 16 pages as indicated by the page attributes in the markdown content."
-                    },
-                    {
-                        id: "slide-awards",
-                        value: false,
-                        reasoning: "The pitch deck does not contain any slides that specifically mention awards or competitions won by the company."
                     },
                     {
                         id: "slide-competition",
@@ -277,6 +252,31 @@ const candidatesData = {
                         id: "slide-traction",
                         value: true,
                         reasoning: "The pitch deck includes a slide titled 'Traction & Market Validation' which provides specific metrics about user growth, revenue generation, and profit margins, indicating a clear focus on the traction of the company's solution."
+                    },
+                    {
+                        id: "content-frankenstein_claim",
+                        value: false,
+                        reasoning: "The pitch deck does not contain any claims that define the 7SECONDS APP by combining elements of existing companies in a 'Frankenstein claim' manner. It focuses on its unique value propositions and market positioning without directly comparing itself to other companies."
+                    },
+                    {
+                        id: "content-multiple_exit_scenarios",
+                        value: false,
+                        reasoning: "The pitch does not explicitly mention a multiple outcome scenario with detailed projections for worst-case, baseline, and best-case outcomes."
+                    },
+                    {
+                        id: "content-pre_money_calculation",
+                        value: false,
+                        reasoning: "The pitch does not explicitly address pre-money valuation calculations or methods such as multiples, discounted cash flow (DCF), or competitor benchmarking."
+                    },
+                    {
+                        id: "content-wrong_use_of_funds",
+                        value: false,
+                        reasoning: "The pitch does not explicitly mention that the capital raised will be allocated to marketing or sales activities or hiring. Instead, it focuses on implementing new app features and expanding into new markets."
+                    },
+                    {
+                        id: "slide-awards",
+                        value: false,
+                        reasoning: "The pitch deck does not contain any slides that specifically mention awards or competitions won by the company."
                     },
                     {
                         id: "slide-why_now",
@@ -350,9 +350,9 @@ const candidatesData = {
                 type: "flat",
                 fields: [
                     {
-                        id: "content-financial_projections",
-                        value: false,
-                        reasoning: "The pitch does not provide any explicit long-term financial projections or forecasts of the company's financial performance over a period of more than 2 years."
+                        id: "meta-n_slides",
+                        value: 19,
+                        reasoning: "The pitch deck document contains 19 pages as indicated by the number of distinct page references in the markdown content."
                     },
                     {
                         id: "content-frankenstein_claim",
@@ -365,24 +365,9 @@ const candidatesData = {
                         reasoning: "The pitch deck provides a comprehensive overview of the startup's market, challenges, and solutions, relying on secondary data such as market size, employee churn statistics, and industry trends, without presenting primary data from interviews or surveys."
                     },
                     {
-                        id: "content-multiple_exit_scenarios",
-                        value: false,
-                        reasoning: "The pitch does not explicitly mention a multiple outcome scenario, including worst-case, baseline, and best-case projections."
-                    },
-                    {
                         id: "content-onepercent_claim",
                         value: true,
                         reasoning: "The pitch deck mentions a US$15Bn market size and states that Worky can cater to ~25M Mexicans and 1.3M SMEs, which implies a potential revenue projection based on a small percentage of the total market."
-                    },
-                    {
-                        id: "content-pre_money_calculation",
-                        value: false,
-                        reasoning: "The pitch does not explicitly mention any pre-money valuation calculations or methodologies such as multiples, discounted cash flow (DCF), or competitor benchmarking."
-                    },
-                    {
-                        id: "content-required_funds",
-                        value: false,
-                        reasoning: "The pitch does not mention any specific amount of money that the company wants to raise."
                     },
                     {
                         id: "content-trump_claim",
@@ -393,21 +378,6 @@ const candidatesData = {
                         id: "content-vanity_claim",
                         value: true,
                         reasoning: "The pitch deck contains a competitive analysis table on page 7 that highlights Worky's strengths in various dimensions compared to competitors. It claims to have a fast onboarding speed, good employee experience, and specialized focus in Mexico, which may suggest a selective comparison that portrays Worky as superior across all measured dimensions without acknowledging the strengths of competitors."
-                    },
-                    {
-                        id: "content-wrong_use_of_funds",
-                        value: false,
-                        reasoning: "The pitch does not explicitly mention any allocation of funds towards marketing or sales activities or hiring. It focuses on product development, market needs, and customer engagement without detailing a plan that includes 'wrong use of funds' as defined."
-                    },
-                    {
-                        id: "meta-n_slides",
-                        value: 19,
-                        reasoning: "The pitch deck document contains 19 pages as indicated by the number of distinct page references in the markdown content."
-                    },
-                    {
-                        id: "slide-awards",
-                        value: false,
-                        reasoning: "The pitch deck does not contain any slides that specifically mention awards or competitions won by the company."
                     },
                     {
                         id: "slide-competition",
@@ -433,6 +403,36 @@ const candidatesData = {
                         id: "slide-why_now",
                         value: true,
                         reasoning: "The pitch deck includes a slide on the HR Tech industry receiving strong tailwinds due to HR glorification and payroll regulation changes, indicating timely market trends that make the startup's solution relevant."
+                    },
+                    {
+                        id: "content-financial_projections",
+                        value: false,
+                        reasoning: "The pitch does not provide any explicit long-term financial projections or forecasts of the company's financial performance over a period of more than 2 years."
+                    },
+                    {
+                        id: "content-multiple_exit_scenarios",
+                        value: false,
+                        reasoning: "The pitch does not explicitly mention a multiple outcome scenario, including worst-case, baseline, and best-case projections."
+                    },
+                    {
+                        id: "content-pre_money_calculation",
+                        value: false,
+                        reasoning: "The pitch does not explicitly mention any pre-money valuation calculations or methodologies such as multiples, discounted cash flow (DCF), or competitor benchmarking."
+                    },
+                    {
+                        id: "content-required_funds",
+                        value: false,
+                        reasoning: "The pitch does not mention any specific amount of money that the company wants to raise."
+                    },
+                    {
+                        id: "content-wrong_use_of_funds",
+                        value: false,
+                        reasoning: "The pitch does not explicitly mention any allocation of funds towards marketing or sales activities or hiring. It focuses on product development, market needs, and customer engagement without detailing a plan that includes 'wrong use of funds' as defined."
+                    },
+                    {
+                        id: "slide-awards",
+                        value: false,
+                        reasoning: "The pitch deck does not contain any slides that specifically mention awards or competitions won by the company."
                     }
                 ]
             },
@@ -545,5 +545,40 @@ function renderTeamDetails() {
     }
 }
 
-// Initialize the app when the DOM is loaded
+function renderPitchDeckDetails() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const datapointId = urlParams.get('datapoint');
+    const pitchDeckElement = document.getElementById('pitch_deck');
+
+    if (datapointId && candidatesData[datapointId]) {
+        const pitchDeckData = candidatesData[datapointId].datapoints.pitch_deck.fields;
+
+        // Sort fields to have strings first, then booleans
+        pitchDeckData.sort((a, b) => {
+            if (typeof a.value === 'string') return -1;
+            if (typeof b.value === 'string') return 1;
+            return 0;
+        });
+
+        pitchDeckElement.innerHTML = ''; // Clear existing content
+
+        pitchDeckData.forEach(field => {
+            const listItem = document.createElement('li');
+            listItem.className = 'list-item';
+
+            const primaryText = document.createElement('div');
+            primaryText.className = 'primary-text';
+            primaryText.textContent = field.id.replace(/_/g, ' ');
+
+            const secondaryText = document.createElement('div');
+            secondaryText.className = 'secondary-text';
+            secondaryText.textContent = field.value;
+
+            listItem.appendChild(primaryText);
+            listItem.appendChild(secondaryText);
+            pitchDeckElement.appendChild(listItem);
+        });
+    }
+}
+
 document.addEventListener('DOMContentLoaded', initApp);
