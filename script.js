@@ -477,6 +477,8 @@ const candidatesData = {
 
 // Initialize the application
 function initApp() {
+    console.log('Initializing app...');
+    console.log('Candidates Data:', candidatesData);
     const currentPage = window.location.pathname;
 
     if (currentPage.endsWith('index.html') || currentPage === '/') {
