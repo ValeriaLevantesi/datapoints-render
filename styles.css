@@ -15,8 +15,8 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 64px 20px 20px;
-    /* Reduced top padding */
+    padding: 20px 20px 20px;
+    /* Consistent padding */
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-top: 20px;
-    /* Added top margin for more space */
+    /* Consistent top margin */
 }
 
 .candidate-card {
@@ -48,7 +48,8 @@ h1 {
 
 .datapoints-list {
     list-style: none;
-    margin-top: 20px;
+    margin-top: 16px;
+    /* Further reduced top margin to 16px */
 }
 
 .datapoints-list li {
@@ -189,6 +190,13 @@ h1 {
     align-items: center;
     justify-content: center;
     /* Center the logo */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 84px 20px 20px;
+    /* Added top padding to account for fixed top-bar */
 }
 
 .logo {
