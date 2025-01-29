@@ -488,9 +488,11 @@ function initApp() {
 
 // Display candidates list on the index page
 function displayCandidatesList() {
+    console.log('Displaying candidates list...');
     const candidatesList = document.getElementById('candidatesList');
 
     for (const [id, candidate] of Object.entries(candidatesData)) {
+        console.log('Creating candidate card for:', id);
         const candidateCard = document.createElement('div');
         candidateCard.className = 'candidate-card';
 
@@ -506,6 +508,7 @@ function displayCandidatesList() {
         });
 
         candidatesList.appendChild(candidateCard);
+        console.log('Appended candidate card for:', id);
     }
 }
 
