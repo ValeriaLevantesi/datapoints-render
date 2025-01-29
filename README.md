@@ -1,7 +1,7 @@
-# Web App Candidato
+# ExtrAi Candidate Prototype
 
-Questo è il prototipo di un'app progettata per mostrare diversi candidati(startups) e i loro datapoint.
-L'app utilizza HTML, CSS e JavaScript per visualizzare le informazioni estratte da un file JSON e renderle più human readable.
+Questo è il prototipo di ExtraAi Candidate progettata per mostrare diversi candidati(startups) e i loro datapoint.
+ExtraAi Candidate utilizza HTML, CSS e JavaScript per visualizzare le informazioni estratte da un file JSON e renderle più human readable.
 
 ## Struttura del Progetto
 
@@ -29,5 +29,3 @@ I datafield possono essere di diversi tipi:
 - Array di stringhe
 - Array di numeri
 - Mappa
-
-
