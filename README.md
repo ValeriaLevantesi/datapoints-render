@@ -13,7 +13,7 @@ ExtraAi Candidate utilizza HTML, CSS e JavaScript per visualizzare le informazio
 
 ## Come Usare
 
-1. Visita il sito web al seguente URL: [https://valerialevantesi.github.io/datapoints-render/](https://valerialevantesi.github.io/datapoints-render/)
+1. Visita il sito web al seguente URL: [https://valerialevantesi.github.io/datapoints-render/](https://valerialevantesi.github.io/datapoints-render/index.html)
 2. I dati del candidato vengono caricati da `candidato.json` e possono essere visualizzati nella console del browser.
 
 ## Tipi di Datapoint nel JSON
