@@ -19,7 +19,8 @@ function loadDatapoints() {
     const pitchDeckItem = document.createElement('li');
     pitchDeckItem.className = 'datapoint-item';
     pitchDeckItem.innerHTML = `
-        <h3>Pitch Deck</h3>
+        <img src="assets/document-text.png" alt="Document Icon" class="document-icon">
+<h3>Pitch Deck</h3>
         <img src="assets/arrow-right.png" alt="Arrow Icon" class="arrow-icon">
     `;
     pitchDeckItem.addEventListener('click', () => {
@@ -31,7 +32,8 @@ function loadDatapoints() {
     const teamItem = document.createElement('li');
     teamItem.className = 'datapoint-item';
     teamItem.innerHTML = `
-        <h3>Team</h3>
+        <img src="assets/team.png" alt="Team Icon" class="document-icon">
+<h3>Team</h3>
         <img src="assets/arrow-right.png" alt="Arrow Icon" class="arrow-icon">
     `;
     teamItem.addEventListener('click', () => {

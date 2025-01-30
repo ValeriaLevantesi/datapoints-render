@@ -309,6 +309,14 @@ h1 {
     color: #374957;
 }
 
+.datapoint-item img.document-icon {
+    margin-right: 16px;
+}
+
+.datapoint-item img.arrow-icon {
+    margin-left: auto;
+}
+
 .datapoint-item:hover {
     transform: translateY(-5px);
 }
