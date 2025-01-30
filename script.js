@@ -571,12 +571,13 @@ function renderPitchDeckDetails() {
             primaryText.className = 'primary-text';
             primaryText.textContent = field.id.replace(/_/g, ' ');
 
-            const secondaryText = document.createElement('div');
-            secondaryText.className = 'secondary-text';
-            secondaryText.textContent = field.value;
+            const arrowIcon = document.createElement('img');
+            arrowIcon.src = 'assets/arrow-right.png';
+            arrowIcon.alt = 'Arrow Icon';
+            arrowIcon.className = 'arrow-icon';
 
             listItem.appendChild(primaryText);
-            listItem.appendChild(secondaryText);
+            listItem.appendChild(arrowIcon);
             pitchDeckElement.appendChild(listItem);
         });
     }
