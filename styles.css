@@ -64,8 +64,8 @@ h1 {
 
 .datapoints-list {
     list-style: none;
-    margin-top: 16px;
-    /* Further reduced top margin to 16px */
+    margin-top: 24px;
+    /* Adjusted top margin to 24px */
 }
 
 .datapoints-list li {
@@ -208,11 +208,10 @@ h1 {
     /* Center the logo */
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 84px 20px 20px;
-    /* Added top padding to account for fixed top-bar */
+.index-container {
+    padding: 24px 20px 20px;
+    margin-top: 64px;
+    /* Added top margin to account for fixed top bar */
 }
 
 .logo {
