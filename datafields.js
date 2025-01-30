@@ -2,6 +2,8 @@ function loadDatafields() {
     const urlParams = new URLSearchParams(window.location.search);
     const candidateId = urlParams.get('id');
     const datapointId = urlParams.get('datapoint');
+    const backButton = document.querySelector('.back-button');
+    backButton.href = `datapoints.html?id=${candidateId}&datapoint=${datapointId}`;
 
     if (!candidateId || !datapointId || !candidatesData[candidateId]) {
         window.location.href = 'index.html';
