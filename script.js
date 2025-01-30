@@ -501,6 +501,7 @@ function displayCandidatesList() {
 
         candidateCard.innerHTML = `
 <h2>${startupName}</h2>
+<img src="assets/arrow-right.png" alt="Arrow Icon" class="arrow-icon">
 `;
 
         candidateCard.addEventListener('click', () => {

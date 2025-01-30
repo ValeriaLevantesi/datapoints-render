@@ -48,6 +48,14 @@ h1 {
     font-weight: 600;
     /* Semibold */
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow-icon {
+    width: 24px;
+    height: 24px;
 }
 
 .candidate-card:hover {
