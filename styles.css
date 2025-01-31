@@ -19,6 +19,13 @@ body {
     /* Consistent padding */
 }
 
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 20px;
+    /* Additional styles specific to team datafields can be added here */
+}
+
 h1 {
     text-align: center;
     margin-bottom: 30px;

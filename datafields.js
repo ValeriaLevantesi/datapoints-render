@@ -19,6 +19,13 @@ function loadDatafields() {
 
     // Display datafields
     const container = document.getElementById('datafieldsContainer');
+    const parentContainer = container.parentElement;
+
+    if (datapointId === 'pitch_deck') {
+        parentContainer.className = 'container';
+    } else if (datapointId === 'team') {
+        parentContainer.className = 'team-container';
+    }
 
     if (datapointId === 'pitch_deck') {
         // Handle flat datapoint (pitch deck)
