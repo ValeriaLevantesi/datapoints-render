@@ -433,6 +433,12 @@ h1 {
     color: #333;
 }
 
+.datafields-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
 .datafield-item {
     background: white;
     padding: 15px;
