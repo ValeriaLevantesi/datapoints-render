@@ -24,7 +24,6 @@ function loadDatafields() {
     if (datapointId === 'pitch_deck') {
         parentContainer.className = 'flat-datafields';
     } else if (datapointId === 'team') {
-        parentContainer.className = 'team-container';
     }
 
     if (datapointId === 'pitch_deck') {
