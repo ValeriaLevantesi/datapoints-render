@@ -22,7 +22,7 @@ function loadDatafields() {
     const parentContainer = container.parentElement;
 
     if (datapointId === 'pitch_deck') {
-        parentContainer.className = 'container';
+        parentContainer.className = 'flat-datafields';
     } else if (datapointId === 'team') {
         parentContainer.className = 'team-container';
     }
