@@ -74,7 +74,20 @@ function loadDatafields() {
             // Create list items for each field, including the index_key
             const fields = [{ id: 'index_key', value: member.index_key }, ...member.fields];
 
-            fields.forEach(field => {
+            // Sort fields to ensure the string field is at the top, but keep index_key at the top
+            const sortedFields = fields.filter(field => field.id !== 'index_key').sort((a, b) => {
+                if (typeof a.value === 'string') return -1;
+                if (typeof b.value === 'string') return 1;
+                return 0;
+            });
+
+            // Add index_key back to the top
+            const indexKeyField = fields.find(field => field.id === 'index_key');
+            if (indexKeyField) {
+                sortedFields.unshift(indexKeyField);
+            }
+
+            sortedFields.forEach(field => {
                 // Format the field ID
                 const formattedId = field.id
                     .replace(/_/g, ' ')
