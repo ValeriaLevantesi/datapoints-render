@@ -69,53 +69,35 @@ function loadDatafields() {
     } else if (datapointId === 'team') {
         // Handle iterable datapoint (team)
         datapointData.elements.forEach(member => {
-            const memberElement = document.createElement('div');
+            const memberElement = document.createElement('ul');
             memberElement.className = 'team-member';
 
-            // Format the member name
-            const memberName = member.index_key
-                .replace(/_/g, ' ')
-                .split(' ')
-                .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                .join(' ');
+            // Create list items for each field, including the index_key
+            const fields = [{ id: 'index_key', value: member.index_key }, ...member.fields];
 
-            const fieldsHTML = member.fields
-                .map(field => {
-                    // Skip role field as it's already in the header
-                    if (field.id === 'role') {
-                        return '';
-                    }
+            fields.forEach(field => {
+                // Format the field ID
+                const formattedId = field.id
+                    .replace(/_/g, ' ')
+                    .split(' ')
+                    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                    .join(' ');
 
-                    // Format the field ID
-                    const formattedId = field.id
-                        .replace(/_/g, ' ')
-                        .split(' ')
-                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-                        .join(' ');
+                const fieldItem = document.createElement('li');
+                fieldItem.className = field.id === 'index_key' ? 'member-name' : 'field-item';
+                fieldItem.innerHTML = field.id === 'index_key' ? `
+    <span class="team-member-name">
+                        ${field.value}
+                    </span>
+                ` : `
+                    <span class="field-label">${formattedId}:</span>
+                    <span class="field-value ${field.value ? 'positive' : 'negative'}">
+                        ${field.value === true ? 'true' : field.value === false ? 'false' : field.value}
+                    </span>
+                `;
+                memberElement.appendChild(fieldItem);
+            });
 
-                    return `
-                        <div class="field-item">
-                            <span class="field-label">${formattedId}:</span>
-                            <span class="field-value ${field.value ? 'positive' : 'negative'}">
-                                ${field.value === true ? 'true' : field.value === false ? 'false' : field.value}
-                            </span>
-                        </div>
-                    `;
-                })
-                .join('');
-
-            // Get the role field
-            const roleField = member.fields.find(f => f.id === 'role');
-
-            memberElement.innerHTML = `
-                <div class="member-header">
-                    <h3>${memberName}</h3>
-                    <span class="member-role">${roleField ? roleField.value : ''}</span>
-                </div>
-                <div class="member-fields">
-                    ${fieldsHTML}
-                </div>
-            `;
             container.appendChild(memberElement);
         });
     }
