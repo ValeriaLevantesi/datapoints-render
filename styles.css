@@ -15,8 +15,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 20px 20px;
-    /* Consistent padding */
+    padding: 24px 16px 16px;
 }
 
 .team-container {
@@ -34,10 +33,9 @@ h1 {
 
 .candidates-list {
     display: grid;
-    gap: 20px;
+    gap: 16px;
     grid-template-columns: 1fr;
-    margin-top: 20px;
-    /* Consistent top margin */
+    margin-top: 0px;
 }
 
 .candidate-card {
@@ -72,8 +70,7 @@ h1 {
 
 .datapoints-list {
     list-style: none;
-    margin-top: 24px;
-    /* Adjusted top margin to 24px */
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,14 +209,12 @@ h1 {
     width: 100%;
     background-color: #FCFCFC;
     height: 64px;
-    /* Adjusted height to 64px */
     padding: 0 20px;
     box-shadow: 0 8px 24px rgba(55, 73, 87, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Center the logo */
 }
 
 .index-container {
@@ -443,13 +438,13 @@ h1 {
 .datafields-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
 }
 
 .datafield-item {
     background: white;
     padding: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border-radius: 8px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
