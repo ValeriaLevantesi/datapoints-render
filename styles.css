@@ -37,7 +37,7 @@ h1 {
     background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
     width: 100%;
@@ -293,7 +293,7 @@ h1 {
     background: white;
     padding: 20px;
     border-radius: 16px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
     width: 100%;
@@ -438,19 +438,39 @@ h1 {
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .field-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin-bottom: 0px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.primary-text {
+    color: #37BEE6;
+    font-weight: bold;
+}
+
+.secondary-text {
+    color: #374957;
+    display: block;
+    margin-top: 5px;
 }
 
 .field-value {
     font-weight: bold;
-    padding: 4px 8px;
+    padding: 0px;
+    padding-left: 32px;
+    padding-top: 0px;
     border-radius: 4px;
+    margin-top: 0px;
 }
 
 .field-value.positive {
@@ -493,4 +513,10 @@ h1 {
 
 .field-label {
     color: #666;
+}
+
+.value-separator {
+    display: block;
+    height: 10px;
+    /* Adjust as needed */
 }

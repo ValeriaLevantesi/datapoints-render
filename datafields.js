@@ -37,13 +37,16 @@ function loadDatafields() {
                 .join(' ');
 
             fieldElement.innerHTML = `
-                <div class="field-header">
-                    <h3>${formattedId}</h3>
-                    <span class="field-value ${field.value ? 'positive' : 'negative'}">
-                        ${field.value === true ? '✓' : field.value === false ? '✗' : field.value}
-                    </span>
-                </div>
-            `;
+    <div class="field-header">
+        <img src="assets/presentation.png" alt="Presentation Icon" class="icon">
+        <h3 class="primary-text">${formattedId}</h3>
+    </div>
+    <div class="field-value">
+        <span class="secondary-text">
+            ${field.value === true ? 'true' : field.value === false ? 'false' : field.value}
+        </span>
+    </div>
+`;
             return { element: fieldElement, isString: typeof field.value === 'string' };
         });
 
@@ -87,7 +90,7 @@ function loadDatafields() {
                         <div class="field-item">
                             <span class="field-label">${formattedId}:</span>
                             <span class="field-value ${field.value ? 'positive' : 'negative'}">
-                                ${field.value === true ? '✓' : field.value === false ? '✗' : field.value}
+                                ${field.value === true ? 'true' : field.value === false ? 'false' : field.value}
                             </span>
                         </div>
                     `;
