@@ -18,12 +18,7 @@ body {
     padding: 24px 16px 16px;
 }
 
-.team-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 20px 20px;
-    /* Additional styles specific to team datafields can be added here */
-}
+
 
 h1 {
     text-align: center;
@@ -435,23 +430,6 @@ h1 {
     color: #333;
 }
 
-.datafields-container {
-    padding: 16px;
-}
-
-.datafield-item {
-    background: white;
-    padding: 15px;
-    margin-bottom: 16px;
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.field-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0px;
-}
 
 .icon {
     width: 24px;
@@ -470,41 +448,6 @@ h1 {
     margin-top: 5px;
 }
 
-.field-value {
-    font-weight: bold;
-    padding: 0px;
-    padding-left: 32px;
-    padding-top: 0px;
-    border-radius: 4px;
-    margin-top: 0px;
-}
-
-.field-value.positive {
-    color: #2e7d32;
-    background: #e8f5e9;
-}
-
-.field-value.negative {
-    color: #c62828;
-    background: #ffebee;
-}
-
-.team-member {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 15px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-}
-
-.member-name {
-    grid-column: span 2;
-    background-color: #EDFDFD;
-    border: 1px solid #37BEE6;
-    border-radius: 8px;
-    padding: 8px;
-}
 
 .blue-item {
     background-color: #EDFDFD;
@@ -513,13 +456,6 @@ h1 {
     font-weight: bold;
 }
 
-.field-item {
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-}
 
 .member-header {
     border-bottom: 1px solid #eee;
@@ -541,9 +477,6 @@ h1 {
     padding: 8px 0;
 }
 
-.field-label {
-    color: #666;
-}
 
 .value-separator {
     display: block;
@@ -560,13 +493,99 @@ h1 {
     border-radius: 8px;
 }
 
+.datapoints-container {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+/* In comune */
+.datafields-container {
+    padding: 24px;
+    display: contents;
+}
+
+/* flat */
+
 .flat-datafields {
-    padding: 16px;
+    padding: 24px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.datapoints-container {
-    padding: 20px;
+
+.datafield-item {
+    background: white;
+    padding: 8px;
+    margin-bottom: 16px;
+    margin-right: 8px;
+    margin-left: 8px;
     border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+.field-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.field-value {
+    font-weight: bold;
+    padding: 0px;
+    padding-left: 32px;
+    padding-top: 0px;
+    border-radius: 4px;
+    margin-top: 0px;
+}
+
+/* iterable */
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 16px 16px;
+}
+
+
+.team-member {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+
+.member-name {
+    grid-column: span 2;
+    background-color: #EDFDFD;
+    border: 1px solid #37BEE6;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.field-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+
+.field-label {
+    color: #666;
+}
+
+.field-value.positive {
+    color: #2e7d32;
+    background: #e8f5e9;
+}
+
+.field-value.negative {
+    color: #c62828;
+    background: #ffebee;
 }
