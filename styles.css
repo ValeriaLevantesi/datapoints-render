@@ -436,8 +436,6 @@ h1 {
 }
 
 .datafields-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
 }
 
@@ -495,6 +493,17 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0 0 15px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.member-name {
+    grid-column: span 2;
+    background-color: #EDFDFD;
+    border: 1px solid #37BEE6;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 .blue-item {
@@ -543,11 +552,10 @@ h1 {
 }
 
 .team-member-name {
-    color: #ff5722;
+    color: #37BEE6;
     /* Example color for the team member name */
     font-weight: bold;
     font-size: 1.2em;
     padding: 10px;
-    background-color: #fff3e0;
     border-radius: 8px;
 }
