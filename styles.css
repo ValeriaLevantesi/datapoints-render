@@ -526,16 +526,13 @@ h1 {
 .field-header {
     display: flex;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: -8px;
 }
 
 .field-value {
     font-weight: bold;
-    padding: 0px;
     padding-left: 32px;
-    padding-top: 0px;
     border-radius: 4px;
-    margin-top: 0px;
     color: #374957;
     font-size: 1.2em;
     display: block;
