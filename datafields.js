@@ -98,14 +98,17 @@ function loadDatafields() {
                 const fieldItem = document.createElement('li');
                 fieldItem.className = field.id === 'index_key' ? 'member-name' : 'field-item';
                 fieldItem.innerHTML = field.id === 'index_key' ? `
-    <span class="team-member-name">
+                    <span class="team-member-name">
                         ${field.value}
                     </span>
                 ` : `
-                    <span class="field-label">${formattedId}:</span>
-                    <span class="field-value ${field.value ? 'positive' : 'negative'}">
+                    <div class="field-header">
+                        <img src="assets/presentation.png" alt="Icon" class="icon">
+                        <span class="field-label">${formattedId}</span><br>
+                    </div>
+                    <div class="field-value">
                         ${field.value === true ? 'true' : field.value === false ? 'false' : field.value}
-                    </span>
+                    </div>
                 `;
                 memberElement.appendChild(fieldItem);
             });
