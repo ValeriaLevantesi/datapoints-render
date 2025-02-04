@@ -44,7 +44,7 @@ function loadDatafields() {
 
             fieldElement.innerHTML = `
     <div class="field-header">
-        <img src="assets/presentation.png" alt="Presentation Icon" class="icon">
+        <img src="${field.value === true ? 'assets/check.png' : field.value === false ? 'assets/close.png' : 'assets/presentation.png'}" alt="${field.value === true ? 'Check Icon' : field.value === false ? 'Close Icon' : 'Presentation Icon'}" class="icon">
         <h3 class="primary-text">${formattedId}</h3>
     </div>
     <div class="field-value">
