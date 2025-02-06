@@ -104,7 +104,7 @@ function loadDatafields() {
                     </span>
                 ` : `
                     <div class="field-header">
-                        <img src="assets/presentation.png" alt="Icon" class="icon">
+                        <img src="${field.value === true ? 'assets/check.png' : field.value === false ? 'assets/close.png' : field.id === 'role' ? 'assets/service.png' : 'assets/presentation.png'}" alt="Icon" class="icon">
                         <span class="field-label">${formattedId}</span><br>
                     </div>
                     <div class="field-value">
