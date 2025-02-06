@@ -526,16 +526,21 @@ h1 {
 .field-header {
     display: flex;
     align-items: center;
-    margin-bottom: -8px;
+    margin-bottom: -4px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #37BEE6;
 }
 
 .field-value {
-    font-weight: bold;
+    font-weight: normal;
     padding-left: 32px;
     border-radius: 4px;
     color: #374957;
-    font-size: 1.2em;
+    font-size: 14px;
     display: block;
+    font-family: 'Work Sans', sans-serif;
 }
 
 /* iterable */
@@ -575,7 +580,7 @@ h1 {
 
 
 .field-label {
-    color: #666;
+    color: #37BEE6;
 }
 
 .field-value.positive {
