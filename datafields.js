@@ -98,8 +98,9 @@ function loadDatafields() {
                 const fieldItem = document.createElement('li');
                 fieldItem.className = field.id === 'index_key' ? 'member-name' : 'field-item';
                 fieldItem.innerHTML = field.id === 'index_key' ? `
-                    <span class="team-member-name">
-                        ${field.value}
+<img src="assets/profile.png" alt="Profile Icon" class="profile-icon">
+<span class="team-member-name">
+    ${field.value}
                     </span>
                 ` : `
                     <div class="field-header">
