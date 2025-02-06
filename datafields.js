@@ -26,6 +26,28 @@ function loadDatafields() {
     } else if (datapointId === 'team') {
     }
 
+    // Function to show the reasoning popup
+    function showReasoningPopup(reasoning) {
+        const modal = document.getElementById('infoPopup');
+        const reasoningText = document.getElementById('reasoningText');
+        const closeButton = document.querySelector('.close-button');
+
+        reasoningText.textContent = reasoning;
+        modal.style.display = 'block';
+
+        // Close the modal when the close button is clicked
+        closeButton.onclick = function () {
+            modal.style.display = 'none';
+        };
+
+        // Close the modal when clicking outside of the modal content
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        };
+    }
+
     if (datapointId === 'pitch_deck') {
         // Handle flat datapoint (pitch deck)
         const fields = datapointData.fields.map(field => {
@@ -47,12 +69,19 @@ function loadDatafields() {
         <img src="${field.value === true ? 'assets/check.png' : field.value === false ? 'assets/close.png' : 'assets/presentation.png'}" alt="${field.value === true ? 'Check Icon' : field.value === false ? 'Close Icon' : 'Presentation Icon'}" class="icon">
         <h3 class="primary-text">${formattedId}</h3>
     </div>
+        <img src="assets/info.png" alt="Info Icon" class="info-icon">
+    </div>
     <div class="field-value">
         <span class="secondary-text">
             ${field.value === true ? 'true' : field.value === false ? 'false' : field.value}
         </span>
     </div>
 `;
+            // Add event listener for info icon click
+            fieldElement.querySelector('.info-icon').addEventListener('click', () => {
+                showReasoningPopup(field.reasoning);
+            });
+
             return { element: fieldElement, isString: typeof field.value === 'string' };
         });
 
